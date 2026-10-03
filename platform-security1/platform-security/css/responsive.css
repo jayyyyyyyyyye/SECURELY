@@ -1,0 +1,87 @@
+/* ==========================================================
+   responsive.css — tablet (≤ 1024px), small tablet (≤ 900px), mobile (≤ 600px)
+   ========================================================== */
+
+/* ---------- Tablet: cards go 2 per row ---------- */
+@media (max-width: 1024px) {
+  .grid-3,
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------- Hamburger menu + stacked sections ---------- */
+@media (max-width: 900px) {
+  /* Navbar → hamburger */
+  .nav-links,
+  .nav-actions .btn { display: none; }
+  .menu-toggle { display: inline-grid; place-items: center; }
+
+  /* absolute, not fixed: the blurred header would otherwise become the
+     containing block for a fixed child and squash it to zero height */
+  .menu-open .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    display: block;
+    max-height: calc(100vh - var(--header-h));
+    overflow-y: auto;
+    padding: 12px 0 32px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+  .mobile-menu li { border-bottom: 1px solid var(--border); }
+  .mobile-menu a {
+    display: block;
+    padding: 16px 4px;
+    color: var(--text);
+    font-size: 1.1rem;
+  }
+  .mobile-menu a.active { color: var(--orange); }
+
+  /* Hero: text first, shield below */
+  .hero { padding-bottom: 72px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 56px; }
+  .hero-visual { max-width: 360px; }
+
+  .feature { grid-template-columns: 1fr; padding: 36px; }
+  .split,
+  .learn-steps { grid-template-columns: 1fr; }
+  .threat { padding: 28px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+/* ---------- Mobile: one column, bigger tap targets ---------- */
+@media (max-width: 600px) {
+  .section { padding-block: 64px; }
+  .section-head { margin-bottom: 32px; }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 { grid-template-columns: 1fr; }
+  .card { padding: 24px; }
+
+  .btn-row { flex-direction: column; }
+  .btn-row .btn { width: 100%; padding-block: 16px; }
+
+  .strip-list { grid-template-columns: 1fr 1fr; }
+  .strip-list li { padding: 20px 8px; font-size: 0.72rem; }
+  .strip-list li:nth-child(3) { border-left: 0; }
+  .strip-list li:nth-child(n + 3) { border-top: 1px solid var(--border); }
+
+  .feature { padding: 28px 22px; }
+  .msg-card,
+  .checklist-card,
+  .quiz-card,
+  .threat { padding: 22px; }
+  .threat-head { align-items: flex-start; }
+  .answer-row { flex-direction: column; }
+  .cta-band { padding: 56px 20px; }
+
+  .page-hero { padding: calc(var(--header-h) + 36px) 0 40px; }
+  .pager { flex-direction: column; }
+  .pager-link { max-width: none; }
+  .pager-link.next { margin-left: 0; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; }
+}

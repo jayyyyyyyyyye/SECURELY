@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phishing — SECURELY</title>
+  <meta name="description" content="What phishing is, how to spot the warning signs, and a practice quiz with real-looking messages.">
+  <link rel="icon" href="../images/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/interactions.js" defer></script>
+</head>
+
+<body data-page="phishing" data-root="../">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Know the threats</p>
+        <h1>Phishing</h1>
+        <p class="lead">The most common trick online, and one of the easiest to learn to spot.</p>
+      </div>
+    </section>
+
+    <!-- What & why -->
+    <section class="section">
+      <div class="container split">
+        <div class="prose reveal">
+          <p class="eyebrow">What is it?</p>
+          <h2>What is phishing?</h2>
+          <p>Phishing is when someone pretends to be a person or company you trust (a bank, a school, a delivery service, even a friend) to trick you into giving away passwords, codes or personal details, or into clicking something harmful.</p>
+          <p>The name comes from "fishing": attackers throw out bait, a message, and wait to see who bites.</p>
+        </div>
+
+        <div class="prose reveal">
+          <p class="eyebrow">Why it matters</p>
+          <h2>One click can be enough</h2>
+          <p>A single successful phishing message can give someone access to your accounts, your money or your identity. It works because it targets people, not technology, so knowing the warning signs is your best defence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How does it happen?</p>
+          <h2>Where phishing shows up</h2>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="card reveal">
+            <span class="icon-tile" aria-hidden="true">✉️</span>
+            <h3>Email</h3>
+            <p>Fake alerts, invoices or "password expired" notices that copy real logos.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-tile" aria-hidden="true">💬</span>
+            <h3>Text and chat</h3>
+            <p>Short messages with a link, often about parcels, prizes or account problems.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-tile" aria-hidden="true">👥</span>
+            <h3>Social media</h3>
+            <p>Hacked or fake accounts that send a shocking link or an offer that is too good to be true.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-tile" aria-hidden="true">🌐</span>
+            <h3>Fake websites</h3>
+            <p>Pages that look like a real login screen but send what you type to the attacker.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Red flags -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">How do I recognize it?</p>
+          <h2>Spot the red flags</h2>
+          <p class="lead">Here is a made-up phishing message with the warning signs marked.</p>
+        </div>
+
+        <div class="split">
+          <div class="msg-card reveal" aria-label="Example phishing message">
+            <div class="msg-head">
+              <span class="icon-tile" aria-hidden="true">📧</span>
+              <div>
+                <p class="msg-from"><mark class="flag">Account Support &lt;help@accounts-secure.example&gt;<sup>1</sup></mark></p>
+                <p class="msg-subject">Action required</p>
+              </div>
+            </div>
+            <p class="msg-body">Dear user, <mark class="flag">your account will be locked in 2 hours<sup>2</sup></mark>. <mark class="flag">Confirm your password<sup>3</sup></mark> here:</p>
+            <span class="msg-link"><mark class="flag">secure-login-check.example/verify<sup>4</sup></mark></span>
+          </div>
+
+          <ol class="steps reveal">
+            <li><strong>A strange sender address.</strong> It doesn't match the real company's website.</li>
+            <li><strong>Pressure and urgency.</strong> A deadline is meant to stop you thinking.</li>
+            <li><strong>A request for your password.</strong> Real services won't ask for it by message.</li>
+            <li><strong>A look-alike link.</strong> It leads to a fake page, not the real site.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice -->
+    <section class="section section-alt" id="practice">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Practice</p>
+          <h2>Can You Spot the Phishing?</h2>
+          <p class="lead">Six messages, some real-looking and some suspicious. Decide which is which.</p>
+        </div>
+
+        <div class="msg-card reveal" data-practice="phishing">
+          <noscript><p class="note">Turn on JavaScript to try this practice.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- Protect -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How do I protect myself?</p>
+          <h2>Before you click, and after</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card reveal">
+            <h3>Before you click</h3>
+            <ul class="list-check">
+              <li>Check the sender's address, not just the display name</li>
+              <li>Slow down: urgency is a tactic</li>
+              <li>Open the official app, or type the website address yourself</li>
+              <li>Preview links first (hover on a computer, press and hold on a phone)</li>
+              <li>Never share passwords or one-time codes</li>
+              <li>Use two-factor authentication as a safety net</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>If you already clicked or typed something</h3>
+            <ol class="steps">
+              <li>Stop. Don't enter anything else or open attachments.</li>
+              <li>Change your password from the official app or site, not the link, and anywhere you reused it.</li>
+              <li>Turn on two-factor authentication and sign out of other devices.</li>
+              <li>Check for activity you don't recognize.</li>
+              <li>Report the message to the platform, your school or your IT team.</li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="callout reveal">
+          <p><strong>When in doubt, don't use the link.</strong> Open the official app or type the website address yourself, then check whether the message is real.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SECURELY — Stay Safe in a Connected World</title>
+  <meta name="description" content="Learn simple security practices to protect your accounts, devices, personal information, and online identity.">
+  <link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script src="js/main.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+</head>
+
+<!-- data-root = path from this file back to the project root ("" here, "../" inside /pages) -->
+<body data-page="home" data-root="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Header and footer are inserted by js/main.js so every page shares one copy -->
+
+  <main id="main">
+
+    <!-- 1. HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">Platform Security Awareness</span>
+          <h1>Stay Safe in a <span class="accent">Connected World.</span></h1>
+          <p class="lead">Learn simple security practices to protect your accounts, devices, personal information, and online identity.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="pages/basics.html">Start Learning <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="pages/quiz.html">Take the Quiz</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="orbit" viewBox="0 0 400 400">
+            <circle cx="200" cy="200" r="168"/>
+            <circle cx="200" cy="200" r="120"/>
+            <circle cx="200" cy="200" r="72"/>
+          </svg>
+
+          <svg class="shield" viewBox="0 0 200 240">
+            <defs>
+              <linearGradient id="shield-fill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff9a4d"/>
+                <stop offset="0.55" stop-color="#ff6a00"/>
+                <stop offset="1" stop-color="#b84300"/>
+              </linearGradient>
+              <linearGradient id="shield-edge" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffc08f" stop-opacity="0.9"/>
+                <stop offset="1" stop-color="#ff6a00" stop-opacity="0.2"/>
+              </linearGradient>
+            </defs>
+            <path d="M100 8 186 40v72c0 56-38 96-86 120C52 208 14 168 14 112V40z" fill="url(#shield-fill)"/>
+            <path d="M100 22 172 49v63c0 47-31 81-72 102-41-21-72-55-72-102V49z" fill="none" stroke="url(#shield-edge)" stroke-width="3"/>
+            <circle cx="100" cy="104" r="17" fill="#1a0b00"/>
+            <path d="M91 114h18l5 42H86z" fill="#1a0b00"/>
+          </svg>
+
+          <span class="chip">🔑</span>
+          <span class="chip">📱</span>
+          <span class="chip">🌐</span>
+          <span class="chip">👤</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. QUICK-FACT STRIP -->
+    <section class="strip" aria-label="Areas covered">
+      <div class="container">
+        <ul class="strip-list">
+          <li><span aria-hidden="true">🔐</span> Account Security</li>
+          <li><span aria-hidden="true">📱</span> Device Security</li>
+          <li><span aria-hidden="true">🌐</span> Network Security</li>
+          <li><span aria-hidden="true">🧠</span> Awareness Matters</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. WHY SECURITY MATTERS -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Why it matters</p>
+          <h2>Security Starts With Awareness.</h2>
+          <p class="lead">Cybersecurity is not only about technology. Simple decisions you make every day can help protect your information and accounts.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <span class="icon-tile" aria-hidden="true">🧠</span>
+            <h3>Learn</h3>
+            <p>Understand common security threats.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-tile" aria-hidden="true">🔎</span>
+            <h3>Identify</h3>
+            <p>Recognize suspicious activity and warning signs.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-tile" aria-hidden="true">🛡️</span>
+            <h3>Protect</h3>
+            <p>Apply simple practices to reduce your risk.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. COMMON THREATS -->
+    <section class="section section-alt" id="threats">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Common threats</p>
+          <h2>Know What You're Up Against</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <a class="card card-link reveal" href="pages/threats.html#phishing">
+            <span class="icon-tile" aria-hidden="true">🎣</span>
+            <h3>Phishing</h3>
+            <p>Fake messages and websites.</p>
+            <span class="card-cta">Learn <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+          <a class="card card-link reveal" href="pages/threats.html#social-engineering">
+            <span class="icon-tile" aria-hidden="true">👤</span>
+            <h3>Social Engineering</h3>
+            <p>Manipulation and deception.</p>
+            <span class="card-cta">Learn <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+          <a class="card card-link reveal" href="pages/threats.html#malware">
+            <span class="icon-tile" aria-hidden="true">🦠</span>
+            <h3>Malware</h3>
+            <p>Harmful software.</p>
+            <span class="card-cta">Learn <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+          <a class="card card-link reveal" href="pages/threats.html#ransomware">
+            <span class="icon-tile" aria-hidden="true">🔒</span>
+            <h3>Ransomware</h3>
+            <p>Data locked for payment.</p>
+            <span class="card-cta">Learn <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+          <a class="card card-link reveal" href="pages/threats.html#online-scams">
+            <span class="icon-tile" aria-hidden="true">💰</span>
+            <h3>Online Scams</h3>
+            <p>Fraudulent schemes.</p>
+            <span class="card-cta">Learn <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+          <a class="card card-link reveal" href="pages/threats.html#viruses">
+            <span class="icon-tile" aria-hidden="true">🚨</span>
+            <h3>Viruses</h3>
+            <p>Malicious programs.</p>
+            <span class="card-cta">Learn <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SECURITY TIPS -->
+    <section class="section" id="tips">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Security tips</p>
+          <h2>Small Habits. Stronger Security.</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <a class="card card-link reveal" href="pages/passwords.html">
+            <span class="icon-tile" aria-hidden="true">🔑</span>
+            <h3>Password Security</h3>
+            <p>Use strong and unique passwords.</p>
+            <span class="card-cta">Learn More <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+          <a class="card card-link reveal" href="pages/devices.html">
+            <span class="icon-tile" aria-hidden="true">📱</span>
+            <h3>Device Security</h3>
+            <p>Keep your devices and apps updated.</p>
+            <span class="card-cta">Learn More <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+          <a class="card card-link reveal" href="pages/network.html">
+            <span class="icon-tile" aria-hidden="true">🌐</span>
+            <h3>Network Security</h3>
+            <p>Use Wi-Fi carefully and securely.</p>
+            <span class="card-cta">Learn More <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+        </div>
+
+        <div class="pill-row reveal" aria-label="More topics">
+          <a class="pill" href="pages/privacy.html">Privacy</a>
+          <a class="pill" href="pages/tips.html#safe-browsing">Safe Browsing</a>
+          <a class="pill" href="pages/tips.html#backups">Backups</a>
+          <a class="pill" href="pages/tips.html#software-updates">Software Updates</a>
+          <a class="pill" href="pages/tips.html#account-security">Account Security</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PASSWORD SECURITY FEATURE -->
+    <section class="section section-alt" id="passwords">
+      <div class="container">
+        <div class="feature reveal">
+          <div>
+            <p class="eyebrow">🔐 Password Security</p>
+            <h2>One password shouldn't protect everything.</h2>
+            <p class="lead">Learn how strong, unique passwords and two-factor authentication can add another layer of protection.</p>
+            <a class="btn btn-primary" href="pages/passwords.html">Learn Password Security <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="pw-card" aria-hidden="true">
+            <div class="pw-field"><span>••••••••••••</span><span>🔑</span></div>
+            <div class="pw-meter"><i></i><i></i><i></i><i></i></div>
+            <div class="pw-equation">
+              <span>🔒 Password</span><span class="op">+</span><span>📱 Code</span><span class="op">=</span><span>Extra protection</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PHISHING PRACTICE (logic in js/interactions.js) -->
+    <section class="section" id="practice">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Practice</p>
+          <h2>Can You Spot the Phishing?</h2>
+          <p class="lead">Read the message, then decide: safe or suspicious?</p>
+        </div>
+
+        <div class="msg-card reveal" data-practice="phishing">
+          <noscript><p class="note">Turn on JavaScript to try this practice.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. HABIT CHECKLIST (logic in js/interactions.js) -->
+    <section class="section section-alt" id="checklist">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Self-check</p>
+          <h2>How Secure Are Your Habits?</h2>
+          <p class="lead">Tick the habits you already follow.</p>
+        </div>
+
+        <div class="checklist-card reveal" data-checklist>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I use unique passwords</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I use two-factor authentication</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I keep my software updated</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I avoid suspicious links</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I review my privacy settings</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I back up important files</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I secure my Wi-Fi</span></label>
+
+          <div class="checklist-result" aria-live="polite">
+            <strong data-count>0 / 0 completed</strong>
+            <div class="progress" role="progressbar" aria-label="Habits completed" aria-valuemin="0" aria-valuenow="0">
+              <div class="progress-bar" data-bar></div>
+            </div>
+            <p data-message></p>
+          </div>
+          <p class="note">An educational checklist, not a formal security assessment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. QUIZ PREVIEW -->
+    <section class="section" id="quiz">
+      <div class="container">
+        <div class="cta-band reveal">
+          <p class="eyebrow">Test your knowledge</p>
+          <h2>Think you know cybersecurity?</h2>
+          <p class="lead">Test what you've learned with our interactive quiz.</p>
+          <a class="btn btn-primary" href="pages/quiz.html">Take the Quiz <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

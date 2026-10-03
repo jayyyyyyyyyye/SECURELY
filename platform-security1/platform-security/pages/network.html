@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Network Security — SECURELY</title>
+  <meta name="description" content="Secure your home Wi-Fi, use public Wi-Fi carefully, and protect your connection.">
+  <link rel="icon" href="../images/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/interactions.js" defer></script>
+</head>
+
+<body data-page="network" data-root="../">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Protect your network</p>
+        <h1>Network Security</h1>
+        <p class="lead">Every time you go online, your data travels over a network. Make sure that network is one you can trust.</p>
+
+        <div class="pill-row" aria-label="On this page">
+          <a class="pill" href="#wifi">Wi-Fi Security</a>
+          <a class="pill" href="#public-wifi">Public Wi-Fi</a>
+          <a class="pill" href="#protection">Network Protection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Wi-Fi -->
+    <section class="section" id="wifi">
+      <div class="container split">
+        <div class="prose reveal">
+          <p class="eyebrow">🏠 Home Wi-Fi</p>
+          <h2>Lock down your router</h2>
+          <p>Your router is the front door to your home network. If someone gets into it, they may see what connects to it or slow down your connection, so it's worth a few minutes to set it up properly.</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Router checklist</h3>
+          <ul class="list-check">
+            <li><strong>Use a strong Wi-Fi password:</strong> long, and different from your other passwords</li>
+            <li><strong>Change the default router login</strong> (the admin name and password printed on the device)</li>
+            <li><strong>Keep the router's firmware updated</strong></li>
+            <li>Use WPA3 or WPA2 security, never "open" or WEP</li>
+            <li>Give visitors a guest network if your router offers one</li>
+            <li>Don't put your name or address in the network name</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Public Wi-Fi -->
+    <section class="section section-alt" id="public-wifi">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">☕ Public Wi-Fi</p>
+          <h2>Convenient, but be careful</h2>
+          <p class="lead">Public Wi-Fi (cafés, malls, airports, schools) is shared with strangers, and you can't tell who set it up or who else is on it.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card reveal">
+            <h3>What can go wrong</h3>
+            <ul class="list-warn">
+              <li>Fake hotspots with a look-alike name, set up to catch what you do</li>
+              <li>Other people on the same network may be able to see unprotected traffic</li>
+              <li>Fake login pages shown before you get online</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>Don't panic</h3>
+            <p>Most websites use HTTPS, which protects what you send to them. So public Wi-Fi isn't "always dangerous". The point is to be careful when you sign in to important accounts or enter private information.</p>
+          </article>
+        </div>
+
+        <div class="checklist-card reveal" style="margin-top: 32px" data-checklist>
+          <h3 style="margin-bottom: 8px">Public Wi-Fi safety checklist</h3>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I avoid sensitive activities (banking, payments) when I can</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I use HTTPS websites</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I keep my device updated</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>I turn off automatic connection to unknown networks</span></label>
+
+          <div class="checklist-result" aria-live="polite">
+            <strong data-count>0 / 0 completed</strong>
+            <div class="progress" role="progressbar" aria-label="Habits completed" aria-valuemin="0" aria-valuenow="0">
+              <div class="progress-bar" data-bar></div>
+            </div>
+            <p data-message></p>
+          </div>
+          <p class="note">Ask the staff for the exact network name, and use mobile data for anything important.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Network protection -->
+    <section class="section" id="protection">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">🛡️ Network protection</p>
+          <h2>Extra layers on any network</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <h3>Firewall</h3>
+            <p>Keep your computer's built-in firewall on. It blocks unwanted connections from outside.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Sharing off</h3>
+            <p>Turn off file and device sharing when you're on a public network, and forget networks you no longer use.</p>
+          </article>
+          <article class="card reveal">
+            <h3>VPN (optional)</h3>
+            <p>A trusted VPN can add privacy on public networks, but it doesn't stop phishing or malware, so keep the other habits too.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Device Security — SECURELY</title>
+  <meta name="description" content="Keep your phone and computer safe with screen locks, updates, malware protection, safe downloads and careful app permissions.">
+  <link rel="icon" href="../images/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/interactions.js" defer></script>
+</head>
+
+<body data-page="devices" data-root="../">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Secure your devices</p>
+        <h1>Device Security</h1>
+        <p class="lead">Your phone and computer hold your messages, photos and accounts. A few settings and habits keep them safer.</p>
+
+        <div class="pill-row" aria-label="On this page">
+          <a class="pill" href="#phones">Phones</a>
+          <a class="pill" href="#computers">Computers</a>
+          <a class="pill" href="#malware-protection">Malware Protection</a>
+          <a class="pill" href="#software-updates">Software Updates</a>
+          <a class="pill" href="#downloading">Downloading Safely</a>
+          <a class="pill" href="#app-permissions">App Permissions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phones & computers -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2">
+          <article class="card reveal" id="phones">
+            <span class="icon-tile" aria-hidden="true">📱</span>
+            <h3>Phones</h3>
+            <ul class="list-check">
+              <li><strong>Set a screen lock:</strong> a PIN (6 digits or more), fingerprint or face unlock. Avoid 1234 and your birthday.</li>
+              <li>Turn on automatic updates for the system and your apps</li>
+              <li>Install apps only from the official app store</li>
+              <li>Turn on "Find my device" so you can locate, lock or erase a lost phone</li>
+              <li>Don't leave your phone unlocked and unattended</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" id="computers">
+            <span class="icon-tile" aria-hidden="true">💻</span>
+            <h3>Computers</h3>
+            <ul class="list-check">
+              <li>Lock the screen whenever you step away</li>
+              <li>Use a password or PIN to sign in, and keep it private</li>
+              <li>Keep the system and your browser updated</li>
+              <li>Leave the built-in firewall and security tools turned on</li>
+              <li>On shared computers, log out when you're done and don't save passwords</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Malware protection & updates -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="grid grid-2">
+          <article class="card reveal" id="malware-protection">
+            <span class="icon-tile" aria-hidden="true">🛡️</span>
+            <h3>Malware protection</h3>
+            <p>Security software watches for harmful programs and warns you before they cause damage.</p>
+            <ul class="list-check">
+              <li>Use the built-in tool (like Windows Security) or a reputable antivirus, and keep it on</li>
+              <li>Run a full scan now and then, and scan USB drives before opening them</li>
+              <li>Don't ignore security warnings, and don't turn protection off to "make an app work"</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" id="software-updates">
+            <span class="icon-tile" aria-hidden="true">🔄</span>
+            <h3>Software updates</h3>
+            <p>Updates often fix security holes that attackers already know about. Putting them off leaves those holes open.</p>
+            <ul class="list-check">
+              <li>Turn on automatic updates wherever you can</li>
+              <li>Restart when your device asks you to</li>
+              <li>Update your apps and browser too, not just the system</li>
+              <li>Replace devices that no longer get updates</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloading -->
+    <section class="section" id="downloading">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">⬇️ Downloading safely</p>
+          <h2>Before you download</h2>
+          <p class="lead">Tick each question you can answer "yes" to. If you can't, don't download it.</p>
+        </div>
+
+        <div class="checklist-card reveal" data-checklist>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>Is the source trustworthy?</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>Is the website legitimate (the real address, not a look-alike)?</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>Do you really need the file or app?</span></label>
+          <label class="check-item"><input type="checkbox"><span class="box" aria-hidden="true"></span><span>Does your device or security software recognize it as safe?</span></label>
+
+          <div class="checklist-result" aria-live="polite">
+            <strong data-count>0 / 0 completed</strong>
+            <div class="progress" role="progressbar" aria-label="Questions answered yes" aria-valuemin="0" aria-valuenow="0">
+              <div class="progress-bar" data-bar></div>
+            </div>
+            <p data-message></p>
+          </div>
+          <p class="note">Be extra careful with .exe, .apk and .zip files from outside an official store.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- App permissions -->
+    <section class="section section-alt" id="app-permissions">
+      <div class="container split">
+        <div class="prose reveal">
+          <p class="eyebrow">🔐 App permissions</p>
+          <h2>Does the app really need that?</h2>
+          <p>Apps ask for access to your camera, microphone, contacts, photos and location. Some need it to work. Others just collect more than they should.</p>
+          <p>Ask yourself: does this permission match what the app does? A flashlight app doesn't need your contacts.</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Good habits</h3>
+          <ul class="list-check">
+            <li>Choose "only while using the app" for location when you can</li>
+            <li>Say no to permissions an app doesn't need</li>
+            <li>Check your permission settings now and then and remove what you don't use</li>
+            <li>Uninstall apps you no longer use</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

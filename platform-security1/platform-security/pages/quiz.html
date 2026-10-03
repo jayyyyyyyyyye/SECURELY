@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security Quiz — SECURELY</title>
+  <meta name="description" content="Test what you've learned with a 10-question security quiz and see your score.">
+  <link rel="icon" href="../images/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/quiz.js" defer></script>
+</head>
+
+<body data-page="quiz" data-root="../">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Test yourself</p>
+        <h1>Security Knowledge Test</h1>
+        <p class="lead">10 questions across five topics: basics, passwords, phishing, devices and networks. Pick an answer to see the explanation straight away.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- quiz.js builds the questions and results inside this card -->
+        <div class="quiz-card" data-quiz>
+          <noscript><p class="note">Turn on JavaScript to take the quiz.</p></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
